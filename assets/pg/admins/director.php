@@ -48,8 +48,8 @@ if (!$_SESSION["admin_user"]) {
                     <tr>
                         <th width="2%">#</th>
                         <th class="text-right" width="20%">Nom de l'administrateur</th>
-                        <th class="text-right" width="30%">Adresse e-mail</th>
-                        <th class="text-right" width="30%"></th>
+                        <th class="text-right" width="20%">Adresse e-mail</th>
+                        <th class="text-right" width="20%"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -76,7 +76,7 @@ if (!$_SESSION["admin_user"]) {
                         echo "</td>";
                         echo "<td>" . $row2["admin_email"] . "</td>";
                         echo '<td data-title="Gérer" class="text-center">
-                            <a href="assets/pg/admins/edit_director.php?drc_id=' . $row2["admin_id"] . '" class="edit-btn">Mettre à jour</a>
+                            <a href="assets/pg/admins/edit_director.php?drc_id=' . $row2["admin_id"] . '" class="edit-btn">Modifier</a>
                             <a href="del_check_director?del_id=' . $row2["admin_id"] . '" class="del-btn">Supprimer</a>
                         </td>';
                         echo "</tr>";

@@ -35,7 +35,7 @@ else {
 </head>
 <body>
 
-    <h1 style="text-align: center; margin-top: 100px;">?Voulez vous supprimer ce code difinitevement (<?php echo $delete_coupon; ?>)</h1>
+    <h1 style="text-align: center; margin-top: 100px;">Voulez vous supprimer le code  numéro <?php echo $delete_coupon; ?> difinitevement?</h1>
     <h2 style="text-align: center; margin-top: 50px;">
         <a style="margin: 0 10px; color: white; background-color: #E74C3C; padding: 10px 15px; text-decoration: none;" href="del_discount?del_id=<?php echo $delete_coupon?>&del_stm=true">Oui</a>
         <a style="margin: 0 10px; color: white; background-color: #18BC9C; padding: 10px 15px; text-decoration: none;" href="discounts">Non</a>

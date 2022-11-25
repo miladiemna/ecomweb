@@ -63,7 +63,7 @@ if (!$_SESSION["admin_user"]) {
                         <td>' . $row["coupon_name"] . '</td>
                         <td>' . $row["date"] . 'dh</td>
                         <td>
-                            <a href="assets/pg/admins/edit_discount.php?dis_id=' . $row["id"] . '" class="edit-btn">Mettre à jour</a>
+                            <a href="assets/pg/admins/edit_discount.php?dis_id=' . $row["id"] . '" class="edit-btn">Modifier</a>
                             <a href="del_discount?del_id=' . $row["id"] . '" class="del-btn">Supprimer</a>
                         </td>
                     </tr>';

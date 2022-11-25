@@ -100,7 +100,7 @@ if (!$_SESSION["admin_user"]) {
             <div class="container-form">
                 <form action="" method="post" enctype="multipart/form-data">
                     <input type="text" name="website_name" id="" value="<?php echo $row2['web_name']; ?>" placeholder="Nom du site web">
-                    <input type="text" name="whatsapp_number" id="" value="<?php echo $row2['whatsapp_num']; ?>" placeholder="Numéro What'up">
+                    <input type="text" name="whatsapp_number" id="" value="<?php echo $row2['whatsapp_num']; ?>" placeholder="Numéro WhatsApp">
                     <input type="text" name="header_text" id="" value="<?php echo $row2['header_text']; ?>" placeholder="Text du header">
                     <input type="text" name="about_website" id="" value="<?php echo $row2['web_disc']; ?>" placeholder="Description">
                     <textarea style="height: 100px;" class="txt-style" name="facebook_pixel" id="" placeholder="FaceBook"><?php echo $row2['fb_pixel']; ?></textarea>
