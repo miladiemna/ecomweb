@@ -30,26 +30,7 @@ if (!$_SESSION["admin_user"]) {
     </div>
 
     <div class="content">
-        <div class="side-bar">
-            <div class="item-bar" onclick="window.open('../../../home', '_self');">Page Principale</div>
-            <div class="item-bar" onclick="window.open('../../../products', '_self');">Produits</div>
-            <div id="req1" class="item-bar" onclick="sub_menu_open();">Commandes</div>
-            <div id="req2" class="item-bar" onclick="sub_menu_close();">Commandes</div>
-
-            <div id="sub-menu" class="sub-menu">
-                <div onclick="window.open('requests', '_self')">Toutes les commandes</div>
-                <div onclick="window.open('req1', '_self')">En attente de confirmation</div>
-                <div onclick="window.open('req2', '_self')">En attente de livraison</div>
-                <div onclick="window.open('req3', '_self')">Livrées</div>
-                <div onclick="window.open('req4', '_self')">Annulées</div>
-                <div onclick="window.open('req5', '_self')">Réceptionnées</div>
-            </div>
-
-            <div class="item-bar" onclick="window.open('../../../discounts', '_self');">Code promotion</div>
-            <div class="item-bar" onclick="window.open('../../../cat', '_self');">Catégories</div>
-            <div class="item-bar" onclick="window.open('../../../director', '_self');">Administrateurs</div>
-            <div class="item-bar" onclick="window.open('../../../setting', '_self');">Paramètres</div>
-        </div>
+    <?php  include("./sidebar.php"); ?>
         <div class="content-bar">
 
             <div class="path-bar">
@@ -106,7 +87,7 @@ if (!$_SESSION["admin_user"]) {
                 <span style="color: #333; font-size: 22px; font-weight: bold;"><?php echo $row["city"]; ?></span>
 
                 <p></p>
-                <span style="color: #CC0000; font-size: 22px; font-weight: bold;">Code propotion:  </span>
+                <span style="color: #CC0000; font-size: 22px; font-weight: bold;">Code promotion:  </span>
                 <span style="color: #333; font-size: 22px; font-weight: bold;"><?php echo $row["coupon"]; ?></span>
 
                 <p></p>

@@ -29,26 +29,7 @@ if (!$_SESSION["admin_user"]) {
         </div>
     </div>
 
-    <<div class="side-bar">
-            <div class="item-bar" onclick="window.open('../../../home', '_self');">Acceuil</div>
-            <div class="item-bar" onclick="window.open('../../../products', '_self');">Produits</div>
-            <div id="req1" class="item-bar" onclick="sub_menu_open();">Commandes</div>
-            <div id="req2" class="item-bar" onclick="sub_menu_close();">Commandes</div>
-
-            <div id="sub-menu" class="sub-menu">
-                <div onclick="window.open('requests', '_self')">Toutes les commandes</div>
-                <div onclick="window.open('req1', '_self')">En attentes de confirmation</div>
-                <div onclick="window.open('req2', '_self')">En attente de livraision</div>
-                <div onclick="window.open('req3', '_self')">Livrées</div>
-                <div onclick="window.open('req4', '_self')">Annulées</div>
-                <div onclick="window.open('req5', '_self')">Récéptionnées avec sucès</div>
-            </div>
-
-            <div class="item-bar" onclick="window.open('../../../discounts', '_self');">Code promotion</div>
-            <div class="item-bar" onclick="window.open('../../../cat', '_self');">Catégories</div>
-            <div class="item-bar" onclick="window.open('../../../director', '_self');">Administrateurs</div>
-            <div class="item-bar" onclick="window.open('../../../setting', '_self');">Paramètres</div>
-        </div>
+    <?php  include("./sidebar.php"); ?>
         <div class="content-bar">
 
             <div class="path-bar">
@@ -71,18 +52,18 @@ if (!$_SESSION["admin_user"]) {
                     $shipping_price = $_POST["shipping_price"];
                     $description = htmlspecialchars($_POST["editor1"]);
                     $shipping_info = $_POST["shipping_info"];
-                    $delelte_product_images = $_POST["del_imgs"];
+                    $delelte_product_images = $_FILES["del_imgs"];
                     $category_type = $_POST["cat_type"];
 
-                    if (empty($product_title) ||
-                        empty($original_price) ||
-                        empty($old_price) ||
-                        empty($description) ||
-                        empty($shipping_info) ||
-                        empty($category_type)) {
-                        echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Remplissez les cases vides</div>";
-                    }
-                    else {
+                    // if (empty($product_title) ||
+                    //     empty($original_price) ||
+                    //     empty($old_price) ||
+                    //     empty($description) ||
+                    //     empty($shipping_info) ||
+                    //     empty($category_type)) {
+                    //     echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Remplissez les cases vides</div>";
+                    // }
+                    // else {
 
                         $split_del_prd_imgs = explode(",", "$delelte_product_images");
 
@@ -109,7 +90,7 @@ if (!$_SESSION["admin_user"]) {
                         }
                     }
 
-                }
+                // }
 
                 $sql4 = "SELECT * FROM products WHERE id='$edit_product_id'";
                 $result4 = $conn->query($sql4);

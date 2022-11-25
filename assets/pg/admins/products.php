@@ -31,26 +31,7 @@ if (!$_SESSION["admin_user"]) {
     </div>
 
     <div class="content">
-        <div class="side-bar">
-            <div class="item-bar" onclick="window.open('../../../home', '_self');">Page Principale</div>
-            <div class="item-bar" onclick="window.open('../../../products', '_self');">Produits</div>
-            <div id="req1" class="item-bar" onclick="sub_menu_open();">Commandes</div>
-            <div id="req2" class="item-bar" onclick="sub_menu_close();">Commandes</div>
-
-            <div id="sub-menu" class="sub-menu">
-                <div onclick="window.open('requests', '_self')">Toutes les commandes</div>
-                <div onclick="window.open('req1', '_self')">En attente de confirmation</div>
-                <div onclick="window.open('req2', '_self')">En attente de livraison</div>
-                <div onclick="window.open('req3', '_self')">Livrées</div>
-                <div onclick="window.open('req4', '_self')">Annulées</div>
-                <div onclick="window.open('req5', '_self')">Réceptionnées</div>
-            </div>
-
-            <div class="item-bar" onclick="window.open('../../../discounts', '_self');">Code promotion</div>
-            <div class="item-bar" onclick="window.open('../../../cat', '_self');">Catégories</div>
-            <div class="item-bar" onclick="window.open('../../../director', '_self');">Administrateurs</div>
-            <div class="item-bar" onclick="window.open('../../../setting', '_self');">Paramètres</div>
-        </div>
+    <?php  include("./sidebar.php"); ?>
         <div class="content-bar">
 
             <div class="path-bar">
@@ -72,7 +53,7 @@ if (!$_SESSION["admin_user"]) {
                         <th class="text-right" width="15%">Nombre de ventes</th>
                         <th class="text-right" width="6%">Avis</th>
                         <th class="text-right" width="10%">Catégorie</th>
-                        <th class="text-right" width="60%"></th>
+                        <th class="text-right" width="70%"></th>
                     </tr>
                 </thead>
                 <tbody>

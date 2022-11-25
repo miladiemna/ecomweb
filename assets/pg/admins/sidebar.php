@@ -1,6 +1,6 @@
 <div class="side-bar">
-            <div class="item-bar" onclick="window.open('../../../home', '_self');">Acceuil</div>
-            <div class="item-bar" onclick="window.open('../../../products', '_self');">Produits</div>
+            <div class="item-bar" onclick="window.open('<?php  echo $host_name; ?>/home', '_self');">Acceuil</div>
+            <div class="item-bar" onclick="window.open('<?php  echo $host_name; ?>/products', '_self');">Produits</div>
             <div id="req1" class="item-bar" onclick="sub_menu_open();">Commandes</div>
             <div id="req2" class="item-bar" onclick="sub_menu_close();">Commandes</div>
 
@@ -13,8 +13,8 @@
                 <div onclick="window.open('req5', '_self')">Récéptionnées avec sucès</div>
             </div>
 
-            <div class="item-bar" onclick="window.open('../../../discounts', '_self');">Code promotion</div>
-            <div class="item-bar" onclick="window.open('../../../cat', '_self');">Catégories</div>
-            <div class="item-bar" onclick="window.open('../../../director', '_self');">Administrateurs</div>
-            <div class="item-bar" onclick="window.open('../../../setting', '_self');">Paramètres</div>
+            <div class="item-bar" onclick="window.open(' <?php  echo $host_name; ?>/discounts', '_self');">Code promotion</div>
+            <div class="item-bar" onclick="window.open('<?php  echo $host_name; ?>/cat', '_self');">Catégories</div>
+            <div class="item-bar" onclick="window.open('<?php  echo $host_name; ?>/director', '_self');">Administrateurs</div>
+            <div class="item-bar" onclick="window.open('<?php  echo $host_name; ?>/setting', '_self');">Paramètres</div>
         </div>

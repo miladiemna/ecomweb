@@ -5,7 +5,7 @@ body {
     padding: 0;
     font-family: 'Tajawal', sans-serif;
     background-color: #fff;
-    direction: rtl;
+    /* direction: rtl; */
 }
 
 * {
@@ -79,7 +79,7 @@ body {
 
 .side-menu {
     top: 14px;
-    left: 0;
+    right: 0;
     position: absolute;
     display: flex;
 }
@@ -104,7 +104,7 @@ body {
 }
 
 .side-bar {
-    right: 0;
+    left: 0;
     width: 220px;
     height: calc(100% - 60px);
     background-color: #192330;
@@ -159,7 +159,7 @@ body {
 }
 
 .content-bar {
-    left: 0;
+    right: 0;
     width: calc(100% - 220px);
     height: calc(100% - 60px);
     background-color: white;
