@@ -1,6 +1,6 @@
 <?php
 
-$host_name = "http://localhost:8040/ecomweb/";
+$host_name = "http://localhost/ecomweb/";
 
 $absolute_link = $host_name . "assets/pg/";
 
