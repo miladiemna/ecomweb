@@ -93,9 +93,9 @@ if (!$_SESSION["admin_user"]) {
             while ($row = $result->fetch_assoc()) {
                 echo "<li id='arrayorder_" . $row["id"] . "' style='list-style: none; width: 96%; padding: 12px 20px; margin: 10px 20px 10px 0; border: 1px solid #eee; background-color: #efefef; border-radius: 3px; font-size: 20px; position: relative;'>";
                 echo $row["cat_name"];
-                echo '<div style="position: absolute; left: 10px; top: 12px;" class="clear">
-                          <a href="assets/pg/admins/edit_category.php?cat_id=' . $row["id"] . '" class="edit-btn">تعديل</a>
-                            <a href="del_category?del_id=' . $row["id"] . '" class="del-btn">حذف</a>
+                echo '<div style="position: absolute; right: 10px; top: 12px;" class="clear">
+                          <a href="assets/pg/admins/edit_category.php?cat_id=' . $row["id"] . '" class="edit-btn">Modifier</a>
+                            <a href="del_category?del_id=' . $row["id"] . '" class="del-btn">Supprimer</a>
                       </div>';
                 echo "</li>";
             }
