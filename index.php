@@ -64,6 +64,7 @@
             </div>
 
             <button onclick="window.open('coupons', '_self');">Les soldes</button>
+            
         </div>
     </header>
 

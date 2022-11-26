@@ -24,8 +24,8 @@ if (!$_SESSION["admin_user"]) {
         <div class="header-title">Tableau de board</div>
 
         <div class="side-menu">
-            <div class="menu-item" onclick="window.open('setting', '_self');">Paramètres</div>
-            <div style="color: #E74C3C;" class="menu-item" onclick="window.open('logout', '_self');">Déconnexion</div>
+            <div style="color: #522a34;"class="menu-item" onclick="window.open('setting', '_self');">Paramètres</div>
+            <div style="color: #522a34;" class="menu-item" onclick="window.open('logout', '_self');">Déconnexion</div>
         </div>
     </div>
 
@@ -67,7 +67,7 @@ if (!$_SESSION["admin_user"]) {
                         echo "<td>";
 
                         if ($row2["admin_user"] === $_SESSION["admin_user"]) {
-                            echo "<span style='color: white; font-weight: bold; background-color: #0088ff; padding: 5px;'>" . $row2["admin_user"] . "</span>";
+                            echo "<span style='color: #522a34; font-weight: bold; background-color: #b7a78b; padding: 5px;'>" . $row2["admin_user"] . "</span>";
                         }
                         else {
                             echo $row2["admin_user"];

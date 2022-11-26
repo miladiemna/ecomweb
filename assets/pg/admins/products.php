@@ -25,8 +25,8 @@ if (!$_SESSION["admin_user"]) {
 
 
     <div class="side-menu">
-            <div class="menu-item" onclick="window.open('setting', '_self');">Paramètres</div>
-            <div style="color: #E74C3C;" class="menu-item" onclick="window.open('logout', '_self');">Déconnexion</div>
+            <div style="color: #522a34;" class="menu-item" onclick="window.open('setting', '_self');">Paramètres</div>
+            <div style="color: #522a34;" class="menu-item" onclick="window.open('logout', '_self');">Déconnexion</div>
         </div>
     </div>
 

@@ -110,7 +110,7 @@
     			<?php echo $row["price"] . "DT"; ?>
     		</div>
     		<div class="quantity-box">
-    			الكمية:
+    			Quantité:
     			<div class="quantity-sys">
 			        <button id="plus-btn" onclick="add_num();">+</button>
 			        <input id="input-num" type="text" value="1" onkeyup="check_num();">

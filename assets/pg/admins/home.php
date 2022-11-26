@@ -24,8 +24,8 @@ if (!$_SESSION["admin_user"]) {
         <div class="header-title">Tableau de board</div>
 
         <div class="side-menu">
-            <div class="menu-item" onclick="window.open('setting', '_self');">Paramètres</div>
-            <div style="color: #E74C3C;" class="menu-item" onclick="window.open('logout', '_self');">Déconnexion</div>
+            <div style="color: #522a34;"class="menu-item" onclick="window.open('setting', '_self');">Paramètres</div>
+            <div style="color: #522a34;" class="menu-item" onclick="window.open('logout', '_self');">Déconnexion</div>
         </div>
     </div>
 
@@ -46,7 +46,7 @@ if (!$_SESSION["admin_user"]) {
             </div>
 
             <div class="panel-bar">
-                <div onclick="window.open('products', '_self');">Nombre de produits
+                <div style="color: #522a34;"onclick="window.open('products', '_self');">Nombre de produits
                 
                 <div>
                     
@@ -60,7 +60,7 @@ if (!$_SESSION["admin_user"]) {
                     ?>
                 </div>
                 </div>
-                <div onclick="window.open('req1', '_self');">
+                <div style="color: #522a34;"onclick="window.open('req1', '_self');">
                     Commandes Non confirmées
                     <div>
                         <?php
@@ -74,7 +74,7 @@ if (!$_SESSION["admin_user"]) {
                         ?>
                     </div>
                 </div>
-                <div onclick="window.open('req5', '_self');">Commandes livrées
+                <div style="color: #522a34;"onclick="window.open('req5', '_self');">Commandes livrées
                     <div>
                         <?php
 
@@ -87,7 +87,7 @@ if (!$_SESSION["admin_user"]) {
                         ?>
                     </div>
                 </div>
-                <div>Avis<div>0</div></div>
+                <div style="color: #522a34;">Avis<div>0</div></div>
             </div>
 
             <div class="title-bar-2">Commandes</div>

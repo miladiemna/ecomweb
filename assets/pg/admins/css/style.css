@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Tajawal', sans-serif;
-    background-color: #fff;
+    background-color: #e0cda9;
     /* direction: rtl; */
 }
 
@@ -54,9 +54,9 @@ body {
     color: white;
     font-family: 'Tajawal', sans-serif;
     font-size: 15px;
-    border: 2px solid #6600ff;
+    border: 2px solid #e0cda9;
     border-radius: 6px;
-    background-color: #6600ff;
+    background-color: #e0cda9;
     padding: 8px 10px;
     outline: none;
     cursor: pointer;
@@ -67,8 +67,8 @@ body {
 .header {
     width: 100%;
     height: auto;
-    color: #ECF0F1;
-    background-color: #192330;
+    color: #522a34;
+    background-color: #e0cda9;
     padding: 12px 20px;
     position: relative;
 }
@@ -88,7 +88,7 @@ body {
     margin-left: 20px;
     color: white;
     font-weight: 500;
-    background-color: #2C3E50;
+    background-color: #ebddc5;
     padding: 8px 10px;
 }
 
@@ -107,7 +107,7 @@ body {
     left: 0;
     width: 220px;
     height: calc(100% - 60px);
-    background-color: #192330;
+    background-color: #e0cda9;
     padding-top: 20px;
     position: fixed;
     overflow-y: scroll;
@@ -117,7 +117,7 @@ body {
 .item-bar {
     width: 100%;
     height: auto;
-    color: #ECF0F1;
+    color: #522a34;
     font-size: 18px;
     border-bottom: 1px solid #2A3B52;
     padding: 10px 15px;
@@ -125,7 +125,7 @@ body {
 }
 
 .item-bar:hover {
-    background-color: #18BC9C;
+    background-color: #b7a78b;
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -137,8 +137,8 @@ body {
 .sub-menu {
     width: 220px;
     height: 0px;
-    color: white;
-    background-color: #27374B;
+    color: rgb(19, 7, 7);
+    background-color: #b7a78b;
     overflow: hidden;
     transition: 0.3s all;
 }
@@ -146,7 +146,7 @@ body {
 .sub-menu > div {
     width: 100%;
     height: auto;
-    color: #ECF0F1;
+    color: #030c0e;
     font-size: 18px;
     border-bottom: 1px solid #2A3B52;
     padding: 10px 15px;
@@ -154,7 +154,7 @@ body {
 }
 
 .sub-menu > div:hover {
-    background-color: #344865;
+    background-color: #ebddc5;
     cursor: pointer;
 }
 
@@ -162,7 +162,7 @@ body {
     right: 0;
     width: calc(100% - 220px);
     height: calc(100% - 60px);
-    background-color: white;
+    background-color: #faf7f0;
     position: fixed;
     overflow-y: scroll;
 }
@@ -172,7 +172,7 @@ body {
     padding: 10px;
     color: #9BA5A6;
     font-size: 18px;
-    background-color: #ECF0F1;
+    background-color: #f5eee2;
     display: flex;
     position: relative;
 }
@@ -184,13 +184,13 @@ body {
 .path-bar > button {
     top: 8px;
     right: 10px;
-    color: white;
+    color: #522a34;
     font-family: 'Tajawal', sans-serif;
     font-size: 15px;
     font-weight: 500;
-    border: 1px solid #18BC9C;
+    border: 1px solid #e0cda9;
     border-radius: 3px;
-    background-color: #18BC9C;
+    background-color: #e0cda9;
     padding: 3px 10px;
     box-shadow: 2px 2px 1px #ccc;
     position: absolute;
@@ -201,11 +201,11 @@ body {
 }
 
 .path-bar > button:hover {
-    background-color: #159e82;
+    background-color: #b7a78b;
 }
 
 .active-path {
-    color: #18BC9C !important;
+    color: #8f836d !important;
 }
 
 .panel-bar {
@@ -233,9 +233,9 @@ body {
 
 .title-bar-2 {
     margin: 20px;
-    color: white;
+    color: #522a34;
     font-size: 18px;
-    background-color: #222F41;
+    background-color: #f5eee2;
     padding: 10px;
 }
 
@@ -249,9 +249,9 @@ table {
 }
 
 thead {
-    color: white;
+    color: #522a34;
     padding: 10px;
-    background-color: #222F41;
+    background-color: #e0cda9;
 }
 
 thead tr th {
@@ -265,25 +265,25 @@ tbody tr td {
     font-family: 'Tajawal', sans-serif;
     font-size: 18px;
     border: 1px solid #ccc;
-    background-color: #efefef;
+    background-color: #faf7f0;
     padding: 10px;
 }
 
 .edit-btn {
-    color: white;
+    color: #522a34;
     font-weight: 500;
     border-radius: 3px;
-    background-color: #95A5A6;
+    background-color: #e0cda9;
     padding: 3px 10px;
     text-decoration: none;
 
 }
 
 .del-btn {
-    color: white;
+    color: #522a34;
     font-weight: 500;
     border-radius: 3px;
-    background-color: #E74C3C;
+    background-color: #ebddc5;
     padding: 3px 10px;
     text-decoration: none;
 }
@@ -314,23 +314,24 @@ tbody tr td {
 
 .container-form .file-btn,
 .btn-style {
-    color: white;
+    color: #522a34;
     font-family: 'Tajawal', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    border: 1px solid #18BC9C;
-    background-color: #18BC9C;
+    border: 1px solid #b7a78b;
+    background-color: #b7a78b;
     padding: 10px 15px;
     cursor: pointer;
+    
 }
 
 .container-form input[type=submit] {
-    color: white;
+    color: #522a34;
     font-family: 'Tajawal', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    border: 1px solid #2C3E50;
-    background-color: #2C3E50;
+    border: 1px solid #e0cda9;
+    background-color: #e0cda9;
     padding: 10px 15px;
     cursor: pointer;
 }

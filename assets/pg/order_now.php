@@ -207,6 +207,7 @@
                     <input type="tel" name="phone" placeholder="Téléphone">
                     <input type="text" name="address" placeholder="Adresse">                       
                     <input type="text" name="city" placeholder="Région">
+                    <input type="text" name="Mail" placeholder="tt@gmail.com">
                     
                     <input type="text" name="coupon" placeholder="Code promo id"="coupon">
                     <input type="submit" name="order_sub" value="Confirmer commande">
