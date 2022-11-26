@@ -68,10 +68,10 @@ if (!$_SESSION["admin_user"]) {
                         $sql = "INSERT INTO products (title, disc, price, old_price, shipping, shipping_info, cat_type) VALUES ('$product_title', '$description', '$original_price', '$old_price', '$shipping_price', '$shipping_info', '$category_type')";
                         
                         if ($conn->query($sql) === TRUE) {
-                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #e6fff5;'>Produit ajouté avec succès</div>";
+                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f5eee2;'>Produit ajouté avec succès</div>";
                         }
                         else {
-                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Une erreu s'est produite: " . $conn->error . "</div>";
+                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f5eee2;'>Une erreu s'est produite: " . $conn->error . "</div>";
                         }
 
                         $sql2 = "SELECT * FROM products ORDER BY id DESC";

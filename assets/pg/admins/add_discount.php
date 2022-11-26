@@ -59,10 +59,10 @@ if (!$_SESSION["admin_user"]) {
                     $sql = "INSERT INTO coupons (coupon_name, date) VALUES('$coupon_name', '$coupon_end_date')";
                     
                     if ($conn->query($sql) === TRUE) {
-                        echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #e6fff5;'>Code promo ajouté avec succès</div>";
+                        echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f5eee2;'>Code promo ajouté avec succès</div>";
                     }
                     else {
-                        echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Une erreur s'est produite: " . $conn->error . "</div>";
+                        echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f5eee2;'>Une erreur s'est produite: " . $conn->error . "</div>";
                     }
 
                 }

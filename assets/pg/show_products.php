@@ -126,7 +126,7 @@
             </form>     
             
 
-    		<div class="shipping_info" style="font-size: 18px; margin: 30px 0 20px 0;"><?php echo $row["shipping_info"]; ?></div>
+    		
 
     		<div class="description" style="font-size: 18px; margin: 30px 0 20px 0; border: 1px solid #ccc; background-color: #efefef; padding: 20px 10px;">
     			<?php echo htmlspecialchars_decode($row["disc"]); ?>	

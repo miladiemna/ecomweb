@@ -21,7 +21,7 @@ if (!$_SESSION["admin_user"]) {
 <body>
 
     <div class="header">
-     <div class="header-title">Tableau de board/div>
+     <div class="header-title">Tableau de board</div>
 
         <div class="side-menu">
             <div style="color: #522a34;"class="menu-item" onclick="window.open('setting', '_self');">Paramètres</div>
@@ -55,7 +55,7 @@ if (!$_SESSION["admin_user"]) {
                 if (empty($admin_name) ||
                     empty($admin_email) ||
                     empty($admin_pass)) {
-                        echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Remplissez les cases vides</div>";
+                        echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f0e6d3;'>Remplissez les cases vides</div>";
                     }
                     else {
 
@@ -63,14 +63,14 @@ if (!$_SESSION["admin_user"]) {
                             $sql = "UPDATE admin_login SET admin_user='$admin_name', admin_email='$admin_email', admin_pass='$admin_pass' WHERE admin_id='$drc_id'";
                         
                             if ($conn->query($sql) === TRUE) {
-                                echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #e6fff5;'>Administrateur mis à jour</div>";
+                                echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f0e6d3;'>Administrateur mis à jour</div>";
                             }
                             else {
-                                echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Une erreur s'est produite: " . $conn->error . "</div>";
+                                echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ff0e6d3;'>Une erreur s'est produite: " . $conn->error . "</div>";
                             }
                         }
                         else {
-                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Mot de passe incorrect</div>";
+                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f0e6d3;'>Mot de passe incorrect</div>";
                         }
 
                     }

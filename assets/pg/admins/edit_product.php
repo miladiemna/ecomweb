@@ -83,10 +83,10 @@ if (!$_SESSION["admin_user"]) {
                         $sql = "UPDATE products SET title='$product_title', disc='$description', price='$original_price', old_price='$old_price', shipping='$shipping_price', shipping_info='$shipping_info', cat_type='$category_type' WHERE id='$edit_product_id'";
                         
                         if ($conn->query($sql) === TRUE) {
-                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #e6fff5;'>Produit mis à jour avec succès</div>";
+                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f0e6d3;'>Produit mis à jour avec succès</div>";
                         }
                         else {
-                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Une erreu s'est produite " . $conn->error . "</div>";
+                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f0e6d3;'>Une erreu s'est produite " . $conn->error . "</div>";
                         }
                     }
 
@@ -102,11 +102,11 @@ if (!$_SESSION["admin_user"]) {
             <div class="container-form">
                 <form action="" method="post" enctype="multipart/form-data">
                     <input type="text" name="product_title" id="" placeholder="Nom du produit" value="<?php echo $row4["title"] ?>">
-                    <input type="text" name="original_price" id="" placeholder="Ancien Prixrix" value="<?php echo $row4["price"] ?>">
+                    <input type="text" name="original_price" id="" placeholder="Ancien Prix" value="<?php echo $row4["price"] ?>">
                     <input type="text" name="old_price" id="" placeholder="Nouveau prix" value="<?php echo $row4["old_price"] ?>">
                     <input type="text" name="shipping_price" id="" placeholder="Frais de livraison" value="<?php echo $row4["shipping"] ?>">
                     <textarea name="editor1" id="editor1"><?php echo $row4["disc"] ?></textarea>
-                    <textarea style="height: 100px;" name="shipping_info" id="" placeholder="Détails de la livraison"><?php echo $row4["shipping_info"] ?></textarea>
+                    <textarea style="height: 100px;" name="shipping_info" id="" placeholder="Détails de produit"><?php echo $row4["shipping_info"] ?></textarea>
 
                     <?php
 

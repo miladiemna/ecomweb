@@ -58,7 +58,7 @@ header .menu-bar > div {
 }
 
 header .menu-bar > div:hover {
-    color: #ff00aa;
+    color: #b7a78b;
 }
 
 .logo-wbs {
@@ -157,7 +157,7 @@ text-align: center;
 }
 
 .product-prices .original-price {
-    color: #E52F54;
+    color: #522a34;
     font-weight: bold;
 }
 
@@ -168,10 +168,10 @@ text-align: center;
 
 footer {
     width: 100%;
-    color: white;
+    color: #522a34;
     font-size: 20px;
     text-align: center;
-    background-color: rgb(106, 106, 106);
+    background-color: #e0cda9;
     padding: 10px;
 }
 
@@ -193,7 +193,7 @@ footer {
 
 .price_shw_prd {
     margin-top: 20px;
-    color: #CC0000;
+    color: #522a34;
     font-size: 40px;
 }
 
@@ -219,7 +219,7 @@ background-color: #e0cda9;
 border-radius: 50px;
 border-width: 0;
 box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
-color: #a52d7b;
+color: #522a34;
 cursor: pointer;
 display: inline-block;
 font-family: Arial, sans-serif;
@@ -261,7 +261,7 @@ margin-top: 40px;
 .order_now_price {
     width: 100px;
     height: 100px;
-    color: #CC0000;
+    color: #522a34;
 }
 
 .order_now_price > div {
@@ -270,7 +270,7 @@ margin-top: 40px;
 }
 
 .ship_info {
-    color: #CC0000;
+    color: #522a34;
     position: absolute;
     top: 0;
     right: 20px;
@@ -298,12 +298,12 @@ margin-top: 40px;
 
 .container-form .file-btn,
 .btn-style {
-    color: white;
+    color: #522a34;
     font-family: 'Tajawal', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    border: 1px solid #18BC9C;
-    background-color: #18BC9C;
+    border: 1px solid #e0cda9;
+    background-color: #e0cda9;
     padding: 10px 15px;
     cursor: pointer;
 }
@@ -321,7 +321,7 @@ margin-top: 40px;
 border-radius: 50px;
 border-width: 0;
 box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
-color: #a52d7b;
+color: #522a34;
 cursor: pointer;
 display: inline-block;
 font-family: Arial, sans-serif;
@@ -475,7 +475,7 @@ text-align: center;
 
     .price_shw_prd {
         margin: 20px 10px 20px 0;
-        color: #e310d8;
+        color: #522a34;
         font-size: 40px;
     }
 
@@ -514,7 +514,7 @@ text-align: center;
 border-radius: 50px;
 border-width: 0;
 box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
-color: #a52d7b;
+color: #522a34;
 cursor: pointer;
 display: inline-block;
 font-family: Arial, sans-serif;
@@ -557,7 +557,7 @@ text-align: center;
     }
 
     header .menu-bar > div:hover {
-        color: #f30aef;
+        color: #522a34;
     }
 
     .whts-btn {

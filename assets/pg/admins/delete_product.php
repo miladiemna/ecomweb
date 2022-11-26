@@ -53,10 +53,10 @@ else {
 </head>
 <body>
 
-    <h1 style="text-align: center; margin-top: 100px;">?Voulez vous supprimer ce produit difinitivement<?php echo $delete_product; ?>)</h1>
+    <h1 style="text-align: center; margin-top: 100px;">Voulez vous supprimer le produit numéro <?php echo $delete_product; ?> difinitivement?</h1>
     <h2 style="text-align: center; margin-top: 50px;">
-        <a style="margin: 0 10px; color: white; background-color: #E74C3C; padding: 10px 15px; text-decoration: none;" href="del_product?del_id=<?php echo $delete_product?>&del_stm=true">Oui</a>
-        <a style="margin: 0 10px; color: white; background-color: #18BC9C; padding: 10px 15px; text-decoration: none;" href="products">Non</a>
+        <a style="margin: 0 10px; color: #522a34; background-color: #e0cda9; padding: 10px 15px; text-decoration: none;" href="del_product?del_id=<?php echo $delete_product?>&del_stm=true">Oui</a>
+        <a style="margin: 0 10px; color: #522a34; background-color: #e0cda9; padding: 10px 15px; text-decoration: none;" href="products">Non</a>
     </h2>
     
 </body>

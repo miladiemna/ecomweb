@@ -35,10 +35,10 @@ else {
 </head>
 <body>
 
-    <h1 style="text-align: center; margin-top: 100px;">Voulez vous supprimer cette catégorie difinitivement?<?php echo $delete_category; ?>)</h1>
+    <h1 style="text-align: center; margin-top: 100px;">Voulez vous supprimer la catégorie <?php echo $delete_category; ?> difinitivement?</h1>
     <h2 style="text-align: center; margin-top: 50px;">
-        <a style="margin: 0 10px; color: white; background-color: #E74C3C; padding: 10px 15px; text-decoration: none;" href="del_category?del_id=<?php echo $delete_category?>&del_stm=true">OUI</a>
-        <a style="margin: 0 10px; color: white; background-color: #18BC9C; padding: 10px 15px; text-decoration: none;" href="cat">Non</a>
+        <a style="margin: 0 10px; color: #522a34; background-color: #e0cda9; padding: 10px 15px; text-decoration: none;" href="del_category?del_id=<?php echo $delete_category?>&del_stm=true">OUI</a>
+        <a style="margin: 0 10px; color: #522a34; background-color: #e0cda9; padding: 10px 15px; text-decoration: none;" href="cat">Non</a>
     </h2>
     
 </body>

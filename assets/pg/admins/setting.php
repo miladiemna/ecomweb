@@ -67,7 +67,7 @@ if (!$_SESSION["admin_user"]) {
                                                         gl_analytics = '$gl_analytics' WHERE id='1'";
                     
                         if ($conn->query($sql) === TRUE) {
-                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #e6fff5;'>Paramètres mis à jour avec succès/div>";
+                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #e6fff5;'>Paramètres mis à jour avec succès</div>";
                         }
                         else {
                             echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>>Une erreur s'est produite: " . $conn->error . "</div>";

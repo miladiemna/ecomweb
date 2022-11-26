@@ -49,17 +49,17 @@ if (!$_SESSION["admin_user"]) {
                 $cat_name = $_POST["cat_name"];
 
                 if (empty($cat_name)) {
-                        echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Remplissez les cases vides</div>";
+                        echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f0e6d3;'>Remplissez les cases vides</div>";
                     }
                     else {
 
                         $sql = "UPDATE category SET cat_name='$cat_name' WHERE id='$cat_id'";
                         
                         if ($conn->query($sql) === TRUE) {
-                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #e6fff5;'>Catégorie mise à jour avec succès</div>";
+                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f0e6d3;'>Catégorie mise à jour avec succès</div>";
                         }
                         else {
-                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>Une erreur s'est produite " . $conn->error . "</div>";
+                            echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #f0e6d3;'>Une erreur s'est produite " . $conn->error . "</div>";
                         }
 
                     }
