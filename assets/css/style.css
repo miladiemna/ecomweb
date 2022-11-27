@@ -126,13 +126,13 @@ text-align: center;
 .product-pack {   /*cadre mtaa l produit*/
     margin: 10px;
     width: 250px;
-    border: 1px solid rgb(247, 164, 234);
+    border: 1px solid #e0cda9;
     cursor: pointer;
     transition: 0.3s all;
 }
 
 .product-pack:hover {
-    box-shadow: 2px 2px 4px rgb(237, 179, 179);
+    box-shadow: 2px 2px 4px #e0cda9;
 }
 
 .product-img {

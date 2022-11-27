@@ -55,15 +55,7 @@ if (!$_SESSION["admin_user"]) {
                     $category_type = $_POST["cat_type"];
                     
 
-                    // if (empty($product_title) ||
-                    //     empty($original_price) ||
-                    //     empty($old_price) ||
-                    //     empty($description) ||
-                    //     empty($shipping_info) ||
-                    //     empty($category_type)) {
-                    //     echo "<div style='margin: 20px; font-size: 18px; padding: 10px 15px; background-color: #ffe6e6;'>إملأ الفراغات</div>";
-                    // }
-                    // else {
+                    
 
                         $sql = "INSERT INTO products (title, disc, price, old_price, shipping, shipping_info, cat_type) VALUES ('$product_title', '$description', '$original_price', '$old_price', '$shipping_price', '$shipping_info', '$category_type')";
                         
@@ -107,11 +99,11 @@ if (!$_SESSION["admin_user"]) {
             <div class="container-form">
                 <form action="" method="post" enctype="multipart/form-data">
                     <input type="text" name="product_title" id="" placeholder="Nom du produit">
-                    <input type="text" name="original_price" id="" placeholder="Prix d'origine">
+                    <input type="text" name="original_price" id="" placeholder="Nouveau Prix ">
                     <input type="text" name="old_price" id="" placeholder="Ancien Prix">
                     <input type="text" name="shipping_price" id="" placeholder=" Frais de livraison">
                     <textarea name="editor1" id="editor1"></textarea>
-                    <textarea style="height: 100px;" name="shipping_info" id="" placeholder="Informations sur la livrasion"></textarea>
+                    <textarea style="height: 100px;" name="shipping_info" id="" placeholder="Détail du produit"></textarea>
 
                     <?php
 
