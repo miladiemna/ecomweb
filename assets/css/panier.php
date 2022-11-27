@@ -59,24 +59,47 @@ if (!$erreur){
 echo '<?xml version="1.0" encoding="utf-8"?>';?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
 <head>
+<link rel="stylesheet" href="css/styleP.css">
 <title>Votre panier</title>
 </head>
 <body>
 
-<form method="post" action="panier.php">
-<table style="width: 400px">
-    <tr>
-        <td colspan="4">Votre panier</td>
-    </tr>
-    <tr>
-        <td>Libellé</td>
-        <td>Quantité</td>
-        <td>Prix Unitaire</td>
-        <td>Action</td>
-    </tr>
 
-
+<div id="site">
+<header id="masthead">
+<div id="content">
+		<h1>Votre Panier </h1>
+   <form method="post" action="panier.php">
+<table class="shopping-cart">
+<thead>
+				<tr>
+					<th scope="col">Produit</th>
+					<th scope="col">Quantité</th>
+					<th scope="col" colspan="2">Prix</th>
+				</tr>
+			  </thead>
+           </table>
+           <p id="Total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+				</li>
+				<li>
+					<a href="#" class="btn">Continue Shopping</a>
+				</li>
+				<li>
+					<a href="#" class="btn">Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
     <?php
     if (creationPanier())
     {
