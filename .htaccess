@@ -42,8 +42,11 @@ RewriteRule ^sp_cat ./assets/pg/category.php [NC,L]
 
 RewriteRule ^thanks ./assets/pg/thanks.php [NC,L]
 
-RewriteRule ^coupons ./assets/pg/coupons.php [NC,L]
+RewriteRule ^coupons ./assets/pg/coupons.php [NC,L] 
+RewriteRule ^panier ./assets/css/panier.php [NC,L] 
+
 
 
 RewriteRule ^main_page ./index.php [NC,L]
+
                 

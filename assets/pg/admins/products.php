@@ -73,7 +73,7 @@ if (!$_SESSION["admin_user"]) {
                         <td> <a href="<?php echo $host_name; ?>/home/show/4" target="_blanck">0</a></td>
                         <td>' . $row["cat_type"] . '</td>
                         <td data-title="التحكم" class="text-center">
-                            <a href="assets/pg/admins/edit_product.php?prd_id=' . $row["id"] . '" class="edit-btn">Modofier</a>
+                            <a href="assets/pg/admins/edit_product.php?prd_id=' . $row["id"] . '" class="edit-btn">Modifier</a>
                             <a href="del_product?del_id=' . $row["id"] . '" class="del-btn">Supprimer</a>
                         </td>
                     </tr>';

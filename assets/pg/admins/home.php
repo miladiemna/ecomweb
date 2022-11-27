@@ -35,7 +35,7 @@ if (!$_SESSION["admin_user"]) {
 
             date_default_timezone_set('Africa/Casablanca');
             
-            echo "<div style='position: relative; margin-top: 15px;'> <h2 style='margin-right: 20px; font-size: 32px; font-weight: lighter;'>Menu Principal</h2> <div style='background-color: #ebddc5; color: #522a34; position: absolute; top: 0; right: 20px; padding: 5px 15px; border-radius: 12px;'>" . date("d/m/Y") . "</div> </div>" ;
+            echo "<div style='position: relative; margin-top: 15px;'> <h2 style='margin-right: 20px; font-size: 32px; font-weight: lighter;'>Page Principale</h2> <div style='background-color: #ebddc5; color: #522a34; position: absolute; top: 0; right: 20px; padding: 5px 15px; border-radius: 12px;'>" . date("d/m/Y") . "</div> </div>" ;
             
             ?>
 
