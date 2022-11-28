@@ -63,7 +63,8 @@
             ?>
             </div>
 
-            <button onclick="window.open('coupons', '_self');">Les soldes</button>
+            
+            <button onclick="window.open('panier', '_self');">Votre panier</button>
             
         </div>
     </header>

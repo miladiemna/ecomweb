@@ -121,7 +121,7 @@
             <form style="width: 100%;" action="panier?action=ajout&p=<?php echo $row["price"]; ?>&q=1&l=<?php echo $row["title"]; ?>&id=<?php echo $prd_id; ?>" method="post">
                 <input type="hidden" name="quantity-num" id="quantity-num" value="1">
                 <div class="center-btn">
-                    <button type="submit" class="order-now">Commander maintenant</button> 
+                    <button type="submit" class="order-now">Ajouter au panier</button> 
                 </div>
             </form>     
             
