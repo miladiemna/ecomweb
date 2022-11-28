@@ -61,21 +61,43 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
 
 <head>
-<link rel="stylesheet" href="css/styleP.css">
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title><?php echo $row10["web_name"]; ?> | Tous types de produits</title>
+<link rel="stylesheet" href="main_style">
 <title>Votre panier</title>
 </head>
 <body>
 
+<div class="whts-num-box">
+        <button class="whts-btn"></button>
+        <span class="whts-text"><?php echo $row10["whatsapp_num"]; ?></span>
+</div>
 
-<div id="site">
-<header id="masthead">
-<div id="content">
-		<h1>Votre Panier </h1>
+	<div class="header-bar">
+        <?php echo $row10["header_text"]; ?>
+   </div>
+
+   <header>
+        <div class="center-bar">
+            <div class="logo-wbs" onclick="window.open('main_page', '_self');"></div>
+
+            <div class="menu-bar">
+
+            <button onclick="window.open('coupons', '_self');">Les soldes</button>
+            
+        </div>
+    </header>
+    <div class="title-content">Votre Panier</div>
+<div class="content">
+
    <form method="post" action="panier.php">
 <table class="shopping-cart">
-<thead>
-				<tr>
-					<th scope="col">Produit</th>
+<form>
+            <thead>
+	         <tr>
+               <th scope="col"> Image du produit</th>
+					<th scope="col">Nom Produit</th>
 					<th scope="col">Quantité</th>
 					<th scope="col" colspan="2">Prix</th>
 				</tr>
