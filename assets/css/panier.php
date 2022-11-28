@@ -152,21 +152,18 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
     ?>
            </tbody>
            </table>
-           <p id="Total">
-				<strong>Total</strong>: <span id="stotal"></span>
+           
 			</p>
 			<ul id="shopping-cart-actions">
+			
+				
 				<li>
-					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+					<a href="main_page" div style=" color: #522a34;"class="menu-item" class="btn">Continuer votre shopping</a>
+               
 				</li>
 				<li>
-					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
-				</li>
-				<li>
-					<a href="main_page" class="btn">Continue Shopping</a>
-				</li>
-				<li>
-					<a href="order_now?id=<?php echo $prd_id; ?>" class="btn">Passer commande</a>
+					<a href="order_now?id=<?php echo $prd_id; ?>" div style=" color: #522a34;"class="menu-item" class="btn">Passer votre commande</a>
+              
 				</li>
 			</ul>
 		</form>
