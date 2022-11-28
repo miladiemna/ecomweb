@@ -1,9 +1,10 @@
 <?php
 session_start();
 include_once("fonctions-panier.php");
+require_once("../pg/admins/inc/conn.inc.php");
+
 
 $erreur = false;
-
 $action = (isset($_POST['action'])? $_POST['action']:  (isset($_GET['action'])? $_GET['action']:null )) ;
 if($action !== null)
 {
@@ -14,7 +15,7 @@ if($action !== null)
    $l = (isset($_POST['l'])? $_POST['l']:  (isset($_GET['l'])? $_GET['l']:null )) ;
    $p = (isset($_POST['p'])? $_POST['p']:  (isset($_GET['p'])? $_GET['p']:null )) ;
    $q = (isset($_POST['q'])? $_POST['q']:  (isset($_GET['q'])? $_GET['q']:null )) ;
-
+   $prd_id=$_GET['id'];
    //Suppression des espaces verticaux
    $l = preg_replace('#\v#', '',$l);
    //On vérifie que $p est un float
@@ -102,27 +103,9 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
 					<th scope="col" colspan="2">Prix</th>
 				</tr>
 			  </thead>
-           </table>
-           <p id="Total">
-				<strong>Total</strong>: <span id="stotal"></span>
-			</p>
-			<ul id="shopping-cart-actions">
-				<li>
-					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
-				</li>
-				<li>
-					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
-				</li>
-				<li>
-					<a href="#" class="btn">Continue Shopping</a>
-				</li>
-				<li>
-					<a href="#" class="btn">Go To Checkout</a>
-				</li>
-			</ul>
-		</form>
-	</div>
-    <?php
+           <tbody>
+           <?php
+    //Table produit
     if (creationPanier())
     {
        $nbArticles=count($_SESSION['panier']['libelleProduit']);
@@ -133,6 +116,19 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
           for ($i=0 ;$i < $nbArticles ; $i++)
           {
              echo "<tr>";
+             $dir_path = "../pg/admins/products_img/" . $prd_id;
+                $extensions_array = array('jpg','png','jpeg');
+
+                if(is_dir($dir_path))
+                {
+                    $files = scandir($dir_path);
+
+                    $count_files = count($files);
+            
+    		        echo "<td><img style='border: 1px solid #ccc; width: 175px;'    src='" . $absolute_link . "admins/products_img/" . $prd_id . "/" . $files[2] . "'/></td>";
+
+                }
+         
              echo "<td>".htmlspecialchars($_SESSION['panier']['libelleProduit'][$i])."</ td>";
              echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\"/></td>";
              echo "<td>".htmlspecialchars($_SESSION['panier']['prixProduit'][$i])."</td>";
@@ -152,7 +148,31 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
           echo "</td></tr>";
        }
     }
+    // fin Table produit
     ?>
+           </tbody>
+           </table>
+           <p id="Total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+				</li>
+				<li>
+					<a href="main_page" class="btn">Continue Shopping</a>
+				</li>
+				<li>
+					<a href="order_now?id=<?php echo $prd_id; ?>" class="btn">Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+   
+   
 </table>
 </form>
 </body>
