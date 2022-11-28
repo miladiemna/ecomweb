@@ -154,7 +154,8 @@
                 <div style="margin-top: 10px; display: flex; position: relative; font-size: 24px;">
                     Montant à payer:
                     <div class="ship_info">
-                        <?php echo  $row["price"] * $quantity_num + $row["shipping"]; ?>DT
+                        
+                        <?php  echo  intval($row["price"])*2 + intval($row["shipping"]); ?>DT
                     </div>
                 </div>
                 <div style="height: 50px;"></div>
